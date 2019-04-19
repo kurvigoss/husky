@@ -13,6 +13,8 @@ common/build/
 servers/gateway-server/build/
 servers/test-server/build/
 servers/user-server/build/
+apis/build/tmp/
+servers/build/tmp/
 logs/*
 
 # Package Files #
