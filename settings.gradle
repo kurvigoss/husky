@@ -1,2 +1,9 @@
 rootProject.name = 'husky-ms'
 
+include 'common'
+include 'apis:user-api'
+include 'apis:test-api'
+include 'servers:gateway-server'
+include 'servers:user-server'
+include 'servers:test-server'
+

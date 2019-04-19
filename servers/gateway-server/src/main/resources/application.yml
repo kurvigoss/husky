@@ -1,0 +1,15 @@
+server:
+  port: 9000
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        register: false
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+  application:
+    name: gateway
