@@ -1,0 +1,13 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: husky-test-server
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 15s
+        instance-id: ${spring.application.name}:${random.value}

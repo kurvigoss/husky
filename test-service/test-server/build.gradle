@@ -1,6 +1,6 @@
 dependencies{
-    implementation project(":apis:test-api")
-    implementation project(":apis:user-api")
+    implementation project(":test-service:test-api")
+    implementation project(":user-service:user-api")
     implementation 'org.springframework.cloud:spring-cloud-starter-consul-discovery'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-web'

@@ -1,21 +1,18 @@
 /.gradle/
 /.idea/
 /build/
-apis/test-api/out/
-apis/user-api/out/
+test-service/test-api/out/
+user-service/user-api/out/
+test-service/test-api/build/
+user-service/user-api/build/
 common/out/
-servers/gateway-server/out/
-servers/test-server/out/
-servers/user-server/out/
-apis/test-api/build/
-apis/user-api/build/
+gateway/out/
 common/build/
-servers/gateway-server/build/
-servers/test-server/build/
-servers/user-server/build/
-apis/build/tmp/
-servers/build/tmp/
-logs/*
+gateway/build/
+test-service/test-server/out/
+user-service/user-server/out/
+test-service/test-server/build/
+user-service/user-server/build/
 
 # Package Files #
 *.jar
