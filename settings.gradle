@@ -1,4 +1,4 @@
-rootProject.name = 'husky-ms'
+rootProject.name = 'huskySB'
 
 include 'common'
 include 'gateway'
