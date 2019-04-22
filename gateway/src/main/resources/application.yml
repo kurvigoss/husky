@@ -1,6 +1,8 @@
 server:
-  port: 9000
+  port: 80
 spring:
+  application:
+    name: gateway
   cloud:
     consul:
       host: localhost
@@ -11,5 +13,3 @@ spring:
       discovery:
         locator:
           enabled: true
-  application:
-    name: gateway

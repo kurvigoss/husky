@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath('org.springframework.boot:spring-boot-gradle-plugin:2.0.8.RELEASE')
+        classpath('org.springframework.boot:spring-boot-gradle-plugin:2.1.0.RELEASE')
     }
 }
 
@@ -11,8 +11,8 @@ group 'com.husky'
 version '1.0.0-SNAPSHOT'
 
 ext{
-    springCloudVersion = 'Finchley.RELEASE'
-    springBootVersion = '2.0.8.RELEASE'
+    springCloudVersion = 'Greenwich.RELEASE'
+    springBootVersion = '2.1.0.RELEASE'
 }
 
 subprojects { it 
@@ -38,6 +38,9 @@ subprojects { it
         imports {
             mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
             mavenBom "org.springframework.boot:spring-boot-dependencies:${springBootVersion}"
+        }
+        dependencies{
+            dependency 'commons-beanutils:commons-beanutils:1.9.3'
         }
     }
 
