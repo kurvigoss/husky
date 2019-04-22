@@ -5,7 +5,8 @@ package com.husky.test.constant;
  *
  * @description TODO
  */
-public interface TestAPIConstants {
+public interface TestAPIConsts {
 
+    String API_PACKAGE = "com.husky.user.api";
     String SERVER_NAME = "husky-test-server";
 }

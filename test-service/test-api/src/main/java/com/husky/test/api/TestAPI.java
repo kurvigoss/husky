@@ -1,7 +1,7 @@
 package com.husky.test.api;
 
 import com.husky.common.dto.HuskyResult;
-import com.husky.test.constant.TestAPIConstants;
+import com.husky.test.constant.TestAPIConsts;
 import com.husky.test.dto.TestDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *
  * @description TODO
  */
-@FeignClient(TestAPIConstants.SERVER_NAME)
+@FeignClient(TestAPIConsts.SERVER_NAME)
 @RequestMapping("/test")
 public interface TestAPI {
 

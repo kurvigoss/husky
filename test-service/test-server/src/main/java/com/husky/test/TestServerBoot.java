@@ -1,5 +1,6 @@
 package com.husky.test;
 
+import com.husky.user.constant.UserAPIConsts;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -11,7 +12,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @SpringCloudApplication
 @EnableFeignClients({
-        "com.husky.user.api"
+        UserAPIConsts.API_PACKAGE
 })
 public class TestServerBoot {
 
