@@ -5,7 +5,7 @@ package com.husky.user.constant;
  *
  * @description TODO
  */
-public interface APIConstants {
+public interface UserAPIConstants {
 
     String SERVER_NAME = "husky-user-server";
 }
