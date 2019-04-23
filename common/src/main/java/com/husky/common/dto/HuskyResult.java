@@ -3,6 +3,8 @@ package com.husky.common.dto;
 import com.husky.common.enums.SysExceptionEnum;
 import com.husky.common.exception.HuskyException;
 import com.husky.common.exception.IExceptionEnum;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 import java.io.Serializable;
 
@@ -11,26 +13,31 @@ import java.io.Serializable;
  *
  * @description 统一返回对象
  */
+@ApiModel("统一返回对象")
 public class HuskyResult<T> implements Serializable {
 
     /**
      * 是否成功
      */
+    @ApiModelProperty(value = "是否成功",example = "true")
     private boolean success;
 
     /**
      * 错误码
      */
+    @ApiModelProperty(value = "错误码",example = "000")
     private String code;
 
     /**
-     * 错误信息
+     * 信息
      */
+    @ApiModelProperty(value = "信息",example = "成功了")
     private String message;
 
     /**
      * 数据
      */
+    @ApiModelProperty("数据")
     private T data;
 
     public boolean isSuccess() {
@@ -75,7 +82,7 @@ public class HuskyResult<T> implements Serializable {
         HuskyResult<T> huskyResult = new HuskyResult<>();
         huskyResult.setSuccess(true);
         huskyResult.setData(data);
-        huskyResult.setCode("0000");
+        huskyResult.setCode("000");
         huskyResult.setMessage("成功了");
         return huskyResult;
     }

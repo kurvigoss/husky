@@ -1,4 +1,7 @@
 dependencies{
     api 'org.springframework:spring-web'
     api 'org.springframework.boot:spring-boot-starter'
+    api 'com.google.guava:guava'
+    api 'io.springfox:springfox-swagger-ui'
+    api 'io.springfox:springfox-swagger2'
 }

@@ -11,3 +11,11 @@ spring:
         healthCheckPath: /actuator/health
         healthCheckInterval: 15s
         instance-id: ${spring.application.name}:${random.value}
+husky:
+  swagger:
+    enabled: true
+    basePackage: com.husky.test.spi
+    title: 测试服务
+    description: 测试服务接口文档
+    owner: 卡卡rot~
+    email: gexiao_bing@163.com

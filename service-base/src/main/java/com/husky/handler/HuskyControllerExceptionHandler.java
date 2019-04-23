@@ -1,4 +1,4 @@
-package com.husky.common.handler;
+package com.husky.handler;
 
 import com.husky.common.dto.HuskyResult;
 import com.husky.common.exception.HuskyException;

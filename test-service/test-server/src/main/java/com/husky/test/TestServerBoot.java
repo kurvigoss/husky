@@ -1,5 +1,6 @@
 package com.husky.test;
 
+import com.husky.HuskyApplication;
 import com.husky.user.constant.UserAPIConsts;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
@@ -11,11 +12,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  *
  * @description 启动类
  */
-@SpringCloudApplication
+@HuskyApplication
 @EnableFeignClients({
         UserAPIConsts.API_PACKAGE
 })
-@EnableSwagger2
 public class TestServerBoot {
 
     public static void main(String[] args) {

@@ -2,8 +2,10 @@ rootProject.name = 'huskySB'
 
 include 'common'
 include 'gateway'
+include 'service-base'
 include 'user-service:user-api'
 include 'user-service:user-server'
 include 'test-service:test-api'
 include 'test-service:test-server'
+
 

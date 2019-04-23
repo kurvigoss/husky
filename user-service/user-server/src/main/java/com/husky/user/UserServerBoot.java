@@ -1,5 +1,6 @@
 package com.husky.user;
 
+import com.husky.HuskyApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
@@ -9,9 +10,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  *
  * @description 启动类
  */
-@SpringCloudApplication
-@EnableSwagger2
-public class UserServerBoot {
+@HuskyApplication
+public class UserServerBoot{
 
     public static void main(String[] args) {
         SpringApplication.run(UserServerBoot.class,args);
