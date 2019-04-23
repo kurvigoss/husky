@@ -1,9 +1,7 @@
 package com.husky.user;
 
-import com.husky.HuskyApplication;
+import com.husky.annotation.HuskyApplication;
 import org.springframework.boot.SpringApplication;
-import org.springframework.cloud.client.SpringCloudApplication;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * Created by gexiaobing on 2019-04-19
