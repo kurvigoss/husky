@@ -1,12 +1,11 @@
 package com.husky.gateway.config;
 
-import com.husky.gateway.handler.HuskyErrorWebExceptionHandler;
+import com.husky.gateway.handler.HuskyWebFluxErrorHandler;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.autoconfigure.web.ResourceProperties;
 import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.boot.web.reactive.error.ErrorAttributes;
 import org.springframework.boot.web.reactive.error.ErrorWebExceptionHandler;
-import org.springframework.cloud.gateway.config.GlobalCorsProperties;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -52,7 +51,7 @@ public class ErrorWebFluxConfig {
     @Order(-1)
     public ErrorWebExceptionHandler errorWebExceptionHandler(
             ErrorAttributes errorAttributes) {
-        HuskyErrorWebExceptionHandler exceptionHandler = new HuskyErrorWebExceptionHandler(
+        HuskyWebFluxErrorHandler exceptionHandler = new HuskyWebFluxErrorHandler(
                 errorAttributes, this.resourceProperties,
                 this.serverProperties.getError(), this.applicationContext);
         exceptionHandler.setViewResolvers(this.viewResolvers);

@@ -20,9 +20,9 @@ import java.util.Map;
  *
  * @description web异常处理
  */
-public class HuskyErrorWebExceptionHandler extends DefaultErrorWebExceptionHandler {
+public class HuskyWebFluxErrorHandler extends DefaultErrorWebExceptionHandler {
 
-    public HuskyErrorWebExceptionHandler(ErrorAttributes errorAttributes, ResourceProperties resourceProperties, ErrorProperties errorProperties, ApplicationContext applicationContext) {
+    public HuskyWebFluxErrorHandler(ErrorAttributes errorAttributes, ResourceProperties resourceProperties, ErrorProperties errorProperties, ApplicationContext applicationContext) {
         super(errorAttributes, resourceProperties, errorProperties, applicationContext);
     }
 
