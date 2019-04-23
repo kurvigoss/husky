@@ -16,7 +16,7 @@ ext{
 }
 
 subprojects { it 
-    if(it.name.contains("-server")){
+    if(it.name.contains("-server")||it.name.equals("gateway")){
         apply plugin: 'java'
         apply plugin: 'org.springframework.boot'
     }else{
@@ -40,7 +40,8 @@ subprojects { it
             mavenBom "org.springframework.boot:spring-boot-dependencies:${springBootVersion}"
         }
         dependencies{
-            dependency 'commons-beanutils:commons-beanutils:1.9.3'
+            dependency 'io.springfox:springfox-swagger2:2.9.2'
+            dependency 'io.springfox:springfox-swagger-ui:2.9.2'
         }
     }
 

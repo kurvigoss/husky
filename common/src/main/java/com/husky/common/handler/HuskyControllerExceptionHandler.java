@@ -1,6 +1,7 @@
-package com.husky.gateway.handler;
+package com.husky.common.handler;
 
 import com.husky.common.dto.HuskyResult;
+import com.husky.common.exception.HuskyException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -22,6 +23,10 @@ public class HuskyControllerExceptionHandler {
     @ResponseStatus(HttpStatus.OK)
     public HuskyResult resolveException(Exception e){
         logger.error(e.getMessage(),e);
-        return HuskyResult.doError();
+        if(e instanceof HuskyException){
+            return HuskyResult.doError((HuskyException)e);
+        }else {
+            return HuskyResult.doError();
+        }
     }
 }

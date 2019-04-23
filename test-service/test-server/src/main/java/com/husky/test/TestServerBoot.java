@@ -4,6 +4,7 @@ import com.husky.user.constant.UserAPIConsts;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * Created by gexiaobing on 2019-04-19
@@ -14,6 +15,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients({
         UserAPIConsts.API_PACKAGE
 })
+@EnableSwagger2
 public class TestServerBoot {
 
     public static void main(String[] args) {

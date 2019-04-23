@@ -1,4 +1,5 @@
 dependencies{
     api project(":common")
     api 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    api 'io.springfox:springfox-swagger2'
 }
