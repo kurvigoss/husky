@@ -7,6 +7,12 @@ buildscript {
     }
 }
 
+repositories {
+    maven {
+        url "https://repo.spring.io/libs-milestone"
+    }
+}
+
 group 'com.husky'
 version '1.0.0-SNAPSHOT'
 
@@ -15,7 +21,7 @@ ext{
     springBootVersion = '2.1.0.RELEASE'
 }
 
-subprojects { it 
+subprojects {  
     if(it.name.contains("-server")||it.name.equals("gateway")){
         apply plugin: 'java'
         apply plugin: 'org.springframework.boot'

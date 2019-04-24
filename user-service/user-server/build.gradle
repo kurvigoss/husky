@@ -1,6 +1,4 @@
 dependencies{
     implementation project(":user-service:user-api")
     implementation project(":service-base")
-    implementation 'org.springframework.cloud:spring-cloud-starter-security'
-    implementation 'org.springframework.cloud:spring-cloud-starter-oauth2'
 }

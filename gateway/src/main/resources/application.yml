@@ -13,3 +13,4 @@ spring:
       discovery:
         locator:
           enabled: true
+          include-expression: "serviceId.contains('husky')"
