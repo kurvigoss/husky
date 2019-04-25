@@ -23,7 +23,6 @@ public class HuskyControllerExceptionHandler {
     @ResponseStatus(HttpStatus.OK)
     public HuskyResult resolveException(Exception e){
         logger.error(e.getMessage(),e);
-        System.out.println();
         if(e instanceof HuskyException){
             return HuskyResult.doError((HuskyException)e);
         }else {
