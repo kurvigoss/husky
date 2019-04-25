@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
  *
  * @description controller异常处理
  */
-@ControllerAdvice
+@RestControllerAdvice
 public class HuskyControllerExceptionHandler {
 
     private static Logger logger = LoggerFactory.getLogger(HuskyControllerExceptionHandler.class);

@@ -6,6 +6,7 @@ import com.husky.user.dto.UserDTO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *
  * @description TODO
  */
-@FeignClient(UserAPIConsts.SERVER_NAME)
+@FeignClient(value = UserAPIConsts.SERVER_NAME)
 @RequestMapping("/user")
 @Api(tags = "用户服务")
 public interface UserAPI {

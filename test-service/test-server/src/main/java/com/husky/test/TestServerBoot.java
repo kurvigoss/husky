@@ -3,6 +3,7 @@ package com.husky.test;
 import com.husky.annotation.HuskyApplication;
 import com.husky.user.constant.UserAPIConsts;
 import org.springframework.boot.SpringApplication;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**

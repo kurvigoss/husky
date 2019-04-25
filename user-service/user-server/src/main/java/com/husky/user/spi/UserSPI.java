@@ -22,4 +22,8 @@ public class UserSPI implements UserAPI {
 
         return HuskyResult.doSuccess(userDTO);
     }
+
+    public String hello(){
+        return "12";
+    }
 }
