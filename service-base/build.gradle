@@ -6,4 +6,6 @@ dependencies{
     api 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
     api 'io.springfox:springfox-swagger-ui'
     api 'io.springfox:springfox-swagger2'
+    api 'io.sentry:sentry'
+    api 'com.alibaba:fastjson'
 }

@@ -14,8 +14,13 @@ spring:
 husky:
   swagger:
     enabled: true
-    basePackage: com.husky.user.spi
+    base-package: com.husky.user.spi
     title: 用户服务
     description: 用户服务接口文档
     owner: 卡卡rot~
+    email: gexiao_bing@163.com
+  sentry:
+    enabled: true
+    dsn: http://d0543f0e3102436287c9b71092f2833b:e2a9c5d7d5da41279e578f35b307d35e@192.168.101.129:9000/2
+    user-name: 卡卡rot~
     email: gexiao_bing@163.com

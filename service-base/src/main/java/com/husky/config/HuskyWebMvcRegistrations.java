@@ -1,8 +1,10 @@
 package com.husky.config;
 
+import com.husky.handler.HuskyRequestMappingHandlerAdapter;
 import com.husky.handler.HuskyRequestMappingHandlerMapping;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcRegistrations;
 import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
 /**
@@ -17,4 +19,8 @@ public class HuskyWebMvcRegistrations implements WebMvcRegistrations {
         return new HuskyRequestMappingHandlerMapping();
     }
 
+    @Override
+    public RequestMappingHandlerAdapter getRequestMappingHandlerAdapter() {
+        return new HuskyRequestMappingHandlerAdapter();
+    }
 }

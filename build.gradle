@@ -11,6 +11,7 @@ repositories {
     maven {
         url "https://repo.spring.io/libs-milestone"
     }
+    mavenCentral()
 }
 
 group 'com.husky'
@@ -49,6 +50,8 @@ subprojects {
             dependency 'io.springfox:springfox-swagger2:2.9.2'
             dependency 'io.springfox:springfox-swagger-ui:2.9.2'
             dependency 'com.google.guava:guava:27.1-jre'
+            dependency 'io.sentry:sentry:1.7.16'
+            dependency 'com.alibaba:fastjson:1.2.57'
         }
     }
 
