@@ -9,6 +9,7 @@ import io.sentry.context.Context;
 import io.sentry.event.BreadcrumbBuilder;
 import io.sentry.event.UserBuilder;
 import org.springframework.boot.SpringApplication;
+import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
 import org.springframework.util.ClassUtils;
 
 import java.lang.reflect.Method;

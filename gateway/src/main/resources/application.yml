@@ -13,4 +13,4 @@ spring:
       discovery:
         locator:
           enabled: true
-          include-expression: "serviceId.contains('husky')"
+          include-expression: "serviceId.contains('kshop')"
